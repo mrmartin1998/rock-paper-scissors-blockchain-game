@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Web3 from 'web3';
 import './globals.css'; // Import the global stylesheet
 
-const correctRockPaperScissorsABI = [
+const RockPaperScissorsABI = [
   {
     "anonymous": false,
     "inputs": [
@@ -65,7 +65,7 @@ const IndexPage = () => {
 
     const initializeWeb3AndContract = () => {
         const web3Instance = new Web3(window.ethereum);
-        const contractInstance = new web3Instance.eth.Contract(correctRockPaperScissorsABI, contractAddress);
+        const contractInstance = new web3Instance.eth.Contract(RockPaperScissorsABI, contractAddress);
         console.log("Web3 and Contract Initialized");
         setWeb3(web3Instance);
         setRockPaperScissorsContract(contractInstance);
