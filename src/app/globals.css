@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-option {
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.btn:hover, .btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
