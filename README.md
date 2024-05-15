@@ -1,43 +1,103 @@
 # Rock Paper Scissors Blockchain Game
 
-## Description
+## Introduction
 
-The Rock Paper Scissors Blockchain Game is a decentralized application (dApp) that brings the classic game of Rock Paper Scissors to the Ethereum blockchain. This project demonstrates blockchain and smart contract capabilities in a fun, interactive way. Players can compete against a computerized opponent, and their choices are recorded and verified on the Ethereum network.
+Welcome to the **Rock Paper Scissors Blockchain Game**, a decentralized application (DApp) that brings the classic game of Rock Paper Scissors to the Ethereum blockchain. This project demonstrates my capabilities in blockchain development, smart contract implementation, and full-stack development. Players can compete against a computerized opponent, and their choices are recorded and verified on the Ethereum network.
 
-## Technologies Used
+## Features
 
-- **Solidity**: For writing the Ethereum smart contract.
-- **React**: For building the front-end user interface.
-- **Next.js**: As a React framework for server-side rendering and routing.
-- **Truffle**: As a development framework for Ethereum.
-- **Ganache**: For running a personal local blockchain for development purposes.
+- **Decentralized Gameplay**: Play Rock Paper Scissors in a decentralized environment.
+- **Smart Contracts**: Secure and transparent game logic implemented with Ethereum smart contracts.
+- **Randomness**: Basic randomness for computer moves to ensure fairness.
+- **Event-Driven Results**: Game results are emitted as events and displayed to users.
+- **Responsive Design**: A user-friendly interface built with modern web technologies.
+
+## Technology Stack
+
+### Frontend
+- **React.js**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+### Backend
+- **Next.js API Routes**: Serverless functions for handling backend logic.
+- **Vercel**: A platform for hosting the Next.js application.
+
+### Blockchain
+- **Truffle Framework**: A development environment for Ethereum smart contracts.
+- **Ganache**: A personal blockchain for Ethereum development.
+- **Solidity**: The programming language for writing Ethereum smart contracts.
 - **Web3.js**: A JavaScript library for interacting with the Ethereum blockchain.
 - **MetaMask**: For Ethereum wallet and transaction management.
 
-## Smart Contract
+## Project Structure
 
-The `RockPaperScissors.sol` smart contract is the backbone of the game. It features key functions such as:
+### Smart Contract
 
-1. **Play Function**: Allows players to make their move (Rock, Paper, or Scissors) which is then compared against a computer-generated move.
-2. **Randomness**: The contract implements basic randomness for the computer's move, making each game unique.
-3. **Game Result**: After each play, the contract emits an event with the game result, which the front-end application listens for and displays to the user.
+The core of the Rock Paper Scissors Blockchain Game is the `RockPaperScissors` smart contract. It includes key functionalities such as:
+- **Play Function**: Allows players to make their move (Rock, Paper, or Scissors) which is then compared against a computer-generated move.
+- **Randomness**: Implements basic randomness for the computer's move, making each game unique.
+- **Game Result Event**: After each play, the contract emits an event with the game result, which the front-end application listens for and displays to the user.
 
-## Front-End
+### Frontend Implementation
 
-The front-end of the application is built with React and Next.js, consisting of:
+The frontend is built using React.js and Next.js, with Tailwind CSS for styling. It interacts with the smart contract to handle user interactions and display game results.
 
-- `src/page.js`: The main React component that users interact with.
+### Key Components
 
-### Installation
+1. **IndexPage**: The main React component where users interact with the game.
+2. **Layout**: Defines the basic layout and metadata for the application.
 
-1. **Clone the Repository**: Clone this repository to your local machine.
-2. **Set Up the Blockchain Environment**: Use Truffle and Ganache for a local Ethereum blockchain environment.
-3. **Deploy the Contract**: Compile and migrate the smart contract to your local blockchain using Truffle.
-4. **Connect the Front-End**: Update the contract's address and ABI in `src/page.js` with the relevant details from your deployment.
+## How to Run the Project
 
-### Usage
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/mrmartin1998/rock-paper-scissors-blockchain-game.git
+    cd rock-paper-scissors-blockchain-game
+    ```
+
+2. **Install Dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Start Ganache** (Personal Ethereum Blockchain):
+    ```sh
+    ganache-cli
+    ```
+
+4. **Deploy Smart Contracts**:
+    ```sh
+    truffle migrate --network development
+    ```
+
+5. **Run the Application**:
+    ```sh
+    npm run dev
+    ```
+
+6. **Open in Browser**:
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Usage
 
 1. **Run the Development Server**: Start the Next.js development server with `npm run dev`.
 2. **Open the Application**: Visit `http://localhost:3000` in a web browser.
 3. **Connect MetaMask**: Ensure MetaMask is set up with your local blockchain and has some test Ether.
 4. **Play the Game**: Choose Rock, Paper, or Scissors and see the result against the computer's choice.
+
+## Conclusion
+
+This project demonstrates my ability to develop a full-stack decentralized application using modern technologies. It showcases my skills in smart contract development, blockchain integration, and building responsive web applications. Thank you for reviewing my project!
+
+---
+
+*Feel free to reach out to me for any questions or further discussions about this project.*
+
+---
+
+**Contact Information:**
+
+- **Email**: martinemilbrabenec@gmail.com
+- **LinkedIn**: [Martin Emil Brabenec](https://www.linkedin.com/in/martin-emil-brabenec-33b818148/)
+- **GitHub**: [mrmartin1998](https://github.com/mrmartin1998/)
